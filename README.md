@@ -16,11 +16,9 @@ Python packages:
 ## How to run?
 1. Clone the repository `https://github.com/FrancoCaredda/BookStoreDB.git`  
 2. Open the cloned folder in a terminal  
-3. Create a new database `bookstore`, using psql  
-4. Run `psql -U <username> -d bookstore -f schema/schema.sql`  
-5. Enter your credentials  
-6. Run `python import_data.py bookstore <username> <password>`
-7. Once you see the success message in the terminal, the db is ready
+3. Run `python build.py <username> <password>` 
+4. Run `python import_all_tables.py <username> <password>`
+5. Once you see the success message in the terminal, the db is ready
 
 ## Test cases
 

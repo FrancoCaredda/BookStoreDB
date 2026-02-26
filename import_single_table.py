@@ -13,10 +13,9 @@ with open(os.path.join(DATA_PATH, FILE), "r") as file:
     csvReader = csv.DictReader(file, delimiter=DELIMITER)
     columns = tuple(csvReader.fieldnames)
 
-with psycopg2.connect("dbname={dbname} user={user} password={password}".format(
-    dbname=sys.argv[2],
-    user=sys.argv[3],
-    password=sys.argv[4]
+with psycopg2.connect("dbname=bookstore user={user} password={password}".format(
+    user=sys.argv[2],
+    password=sys.argv[3]
 )) as connection:
     with connection.cursor() as cursor:
         with open(os.path.join(DATA_PATH, FILE), "r") as file:

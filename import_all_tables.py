@@ -26,10 +26,9 @@ for file in FILES:
         tableName = file[:file.index(".")]
         tables[tableName] = tuple(csvReader.fieldnames)
 
-with psycopg2.connect("dbname={dbname} user={user} password={password}".format(
-    dbname=sys.argv[1],
-    user=sys.argv[2],
-    password=sys.argv[3]
+with psycopg2.connect("dbname=bookstore user={user} password={password}".format(
+    user=sys.argv[1],
+    password=sys.argv[2]
 )) as connection:
 
     with connection.cursor() as cursor:
