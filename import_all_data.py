@@ -40,5 +40,4 @@ with psycopg2.connect("dbname={dbname} user={user} password={password}".format(
                 cursor.copy_from(reader, tableName, columns=tables[tableName],sep=DELIMITER)
                 connection.commit()
 
-
-print("Finished!")
+print("Data has been copied successfully!")
