@@ -22,11 +22,12 @@ Python packages:
 6. Run `python import_data.py bookstore <username> <password>`
 7. Once you see the success message in the terminal, the db is ready
 
-## Schema
-![bookstore_diagram](bookstore_diagram.jpg "Schema")
-
 ## Test cases
 
 |ID|Description|Precondition|Steps|Expected Results|Actual Results|Severity|Notes|
-|--|--|--|--|--|--|--|
-|BK-001|Verify that the books data has been imported correctly|Connection with the db + imported data|1. Run tests/validate_book_info.sql; 2. Compare the results with tests/expected/book_info.csv; 3. Observe the results|The result coincides with the expected data|-|High|-|
+|--|--|--|--|--|--|--|--|
+|BK-001|Verify that the books data has been imported correctly|Connection with the db + imported data|1. Run *tests/validate_book_info.sql*; 2. Compare the results with *tests/expected/book_info.csv*; 3. Observe the results|The result coincides with the expected data|-|High|-|
+|BK-002|Verify that the prices of books are not negative|Connection with the db + imported data|1. Run *tests/check_on_negative_price.sql*; 2. Observe the results|No rows are returned|-|High|-|
+
+## Schema
+![bookstore_diagram](bookstore_diagram.jpg "Schema")
