@@ -11,7 +11,7 @@ Before cloning the repository, make sure that the necessary tools are installed.
 |Python|3.14.3|
 
 ## How to run?
-1. Clone the repository ``  
+1. Clone the repository `https://github.com/FrancoCaredda/BookStoreDB.git`  
 2. Open the cloned folder in a terminal  
 3. Create a new database `bookstore`, using psql  
 4. Run `psql -U <username> -d bookstore -f queries/schema/schema.sql`  
