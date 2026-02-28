@@ -1,6 +1,5 @@
 # BookStore Database
-BookStore database is part of my portfolio that models a simple business scenario for an online store.  
-The goal is to showcase my ability to use SQL to find bugs, inconsistencies in data, and overall knowledge of relational databases.  
+BookStore database models a simple business scenario for a small, online bookstore.
 
 ## Project Scope
 
