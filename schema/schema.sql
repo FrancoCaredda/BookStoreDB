@@ -40,7 +40,6 @@ BEGIN
             publication_year INT NOT NULL,
             lang VARCHAR(20) NOT NULL,
             price_eur NUMERIC(10, 2) NOT NULL,
-            stock_amount INT NOT NULL,
             pages INT NOT NULL,
             isbn VARCHAR(13) UNIQUE NOT NULL
         );

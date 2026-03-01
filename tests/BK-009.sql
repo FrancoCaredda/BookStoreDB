@@ -1,4 +1,3 @@
-SELECT email, COUNT(email) AS repetitions
-FROM customers
-GROUP BY email
-HAVING COUNT(email) > 1;
+SELECT id, first_name, last_name
+FROM authors
+WHERE first_name IS NULL AND last_name IS NOT NULL;

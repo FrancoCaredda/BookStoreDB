@@ -1,3 +1,4 @@
-SELECT id
+SELECT customer_order_id, book_edition_id, COUNT(*) AS repetitions
 FROM customer_order_items
-WHERE quantity <= 0;
+GROUP BY customer_order_id, book_edition_id
+HAVING COUNT(*) > 1;
