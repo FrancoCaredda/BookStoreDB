@@ -1,3 +1,4 @@
 *.drawio
 tests/results/
 tests/results/**
+tests/reports/
